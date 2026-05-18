@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nome": "Geovanna",
+    "conta": "0001",
+    "cartao": "**** 1234",
+    "saldo": 1250.75,
+    "perfil": "conservador",
+    "objetivo": "criar reserva de emergência",
+    "news_icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg",
+    "news_description": "Geovanna, comece com segurança: sua reserva fortalece seus próximos investimentos.",
+    "processed_at": "2026-05-18T15:53:17"
+  },
+  {
+    "id": 2,
+    "nome": "Mariana",
+    "conta": "0002",
+    "cartao": "**** 5678",
+    "saldo": 2840.2,
+    "perfil": "moderado",
+    "objetivo": "começar a investir mensalmente",
+    "news_icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg",
+    "news_description": "Mariana, investir todo mês pode aproximar você dos seus objetivos financeiros.",
+    "processed_at": "2026-05-18T15:53:17"
+  },
+  {
+    "id": 3,
+    "nome": "Lucas",
+    "conta": "0003",
+    "cartao": "**** 9012",
+    "saldo": 430.0,
+    "perfil": "iniciante",
+    "objetivo": "organizar a vida financeira",
+    "news_icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg",
+    "news_description": "Lucas, organize hoje seu dinheiro e dê o primeiro passo para investir melhor.",
+    "processed_at": "2026-05-18T15:53:17"
+  },
+  {
+    "id": 4,
+    "nome": "Ana",
+    "conta": "0004",
+    "cartao": "**** 3456",
+    "saldo": 5200.5,
+    "perfil": "arrojado",
+    "objetivo": "diversificar investimentos",
+    "news_icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg",
+    "news_description": "Ana, diversifique seus investimentos e transforme estratégia em crescimento.",
+    "processed_at": "2026-05-18T15:53:17"
+  },
+  {
+    "id": 5,
+    "nome": "Rafael",
+    "conta": "0005",
+    "cartao": "**** 7890",
+    "saldo": 980.1,
+    "perfil": "moderado",
+    "objetivo": "guardar dinheiro para uma viagem",
+    "news_icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg",
+    "news_description": "Rafael, invista aos poucos e aproxime sua próxima viagem da realidade.",
+    "processed_at": "2026-05-18T15:53:17"
+  }
+]

@@ -1,0 +1,6 @@
+﻿id,nome,conta,cartao,saldo,perfil,objetivo,news_icon,news_description,processed_at
+1,Geovanna,0001,**** 1234,1250.75,conservador,criar reserva de emergência,https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg,"Geovanna, comece com segurança: sua reserva fortalece seus próximos investimentos.",2026-05-18T15:53:17
+2,Mariana,0002,**** 5678,2840.2,moderado,começar a investir mensalmente,https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg,"Mariana, investir todo mês pode aproximar você dos seus objetivos financeiros.",2026-05-18T15:53:17
+3,Lucas,0003,**** 9012,430.0,iniciante,organizar a vida financeira,https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg,"Lucas, organize hoje seu dinheiro e dê o primeiro passo para investir melhor.",2026-05-18T15:53:17
+4,Ana,0004,**** 3456,5200.5,arrojado,diversificar investimentos,https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg,"Ana, diversifique seus investimentos e transforme estratégia em crescimento.",2026-05-18T15:53:17
+5,Rafael,0005,**** 7890,980.1,moderado,guardar dinheiro para uma viagem,https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg,"Rafael, invista aos poucos e aproxime sua próxima viagem da realidade.",2026-05-18T15:53:17
