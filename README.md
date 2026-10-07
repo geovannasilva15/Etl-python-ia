@@ -1,57 +1,70 @@
-<div align="center">
+# Pipeline ETL com Python
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=f59e0b&height=180&section=header&text=ETL%20com%20Python&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=34&desc=Dados%2C%20automa%C3%A7%C3%A3o%20e%20mensagens%20personalizadas&descAlignY=57" alt="ETL com Python" />
+Projeto desenvolvido a partir do desafio do Santander Dev Week para demonstrar um fluxo completo de extração, transformação e carregamento de dados. O pipeline processa uma base fictícia de clientes e gera mensagens de educação financeira personalizadas.
 
-</div>
-
-![Visão explicativa do projeto ETL com Python](assets/readme-project-overview.svg)
-
-
-<div align="center">
-
-[![Python](https://img.shields.io/badge/Python-ETL-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![CSV](https://img.shields.io/badge/Entrada-CSV-16A34A?style=for-the-badge)](#)
-[![JSON](https://img.shields.io/badge/Saída-CSV_e_JSON-111827?style=for-the-badge)](#)
-
-**Pipeline educacional de ETL desenvolvido para o desafio Santander Dev Week.**
-
-</div>
-
-## Sobre
-
-O projeto demonstra um fluxo completo de **extração, transformação e carregamento de dados**. Registros são lidos de uma base CSV, processados em Python para gerar mensagens personalizadas e exportados em formatos estruturados.
-
-## Fluxo do projeto
+## Fluxo
 
 ```mermaid
 flowchart LR
-    A[CSV de entrada] --> B[Extração]
-    B --> C[Transformação em Python]
-    C --> D[Mensagens personalizadas]
-    D --> E[CSV e JSON]
+    CSV[CSV de entrada] --> EX[Extração]
+    EX --> TR[Transformação em Python]
+    TR --> OUT[CSV e JSON]
 ```
+
+O pipeline lê registros de clientes, valida a estrutura da entrada, cria mensagens personalizadas e exporta os resultados em formatos estruturados. A execução funciona localmente sem serviços externos; o uso da API da OpenAI é opcional.
+
+## Resultado verificado
+
+| Verificação | Resultado |
+|---|---:|
+| Registros processados | 5 |
+| Mensagens com até 100 caracteres | 5 de 5 |
+| Formatos gerados | CSV e JSON |
+| Execução sem chave externa | Sim |
 
 ## Estrutura
 
-O código principal está em `santander-etl-python-ia/src/main.py`, acompanhado de dados de entrada, resultados e documentação específica.
+```text
+data/       dados de entrada
+notebooks/  exploração do processo
+output/     resultados gerados
+src/        código principal
+tests/      testes automatizados
+```
 
 ## Executar
 
 ```bash
-git clone https://github.com/geovannasilva15/Etl-python-ia.git
-cd Etl-python-ia/santander-etl-python-ia
+python -m venv .venv
 pip install -r requirements.txt
 python src/main.py
 ```
 
-## Aprendizados
+Os arquivos processados serão gravados em `output/`.
 
-- Construção de pipeline ETL
-- Leitura e transformação de arquivos CSV
-- Geração de conteúdo personalizado
-- Exportação de dados em CSV e JSON
-- Organização modular de um projeto Python
+## OpenAI opcional
+
+Para gerar as mensagens com um modelo da OpenAI, copie `.env.example` para `.env` e informe sua chave:
+
+```bash
+OPENAI_API_KEY=sua_chave
+OPENAI_MODEL=gpt-4.1-mini
+```
+
+Sem essa configuração, o pipeline usa regras locais e continua totalmente executável.
+
+## Testes
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+Os testes cobrem leitura da base, validação das colunas, limite das mensagens e geração dos arquivos finais.
+
+## Tecnologias e práticas
+
+`Python` `pandas` `CSV` `JSON` `ETL` `OpenAI opcional`
 
 ## Autoria
 
-Desenvolvido por **[Geovanna Eduarda da Silva](https://github.com/geovannasilva15)**.
+[Geovanna Eduarda da Silva](https://github.com/geovannasilva15)
